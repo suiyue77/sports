@@ -1,0 +1,6 @@
+# Sports
+A Chinese-language independent sports field guide.
+- [Volleyball](/volleyball/): [rally rules](/volleyball/volleyball-rally/), [first practice](/volleyball/volleyball-first-practice/).
+- [Fitness](/fitness/): [weekly activity](/fitness/fitness-week/), [training notes](/fitness/fitness-training-notes/).
+- [Baseball](/baseball/): [innings](/baseball/baseball-innings/), [positions](/baseball/baseball-positions/).
+Source links are in each article. No live scores or personal exercise records are published.

@@ -1,0 +1,11 @@
+---
+import Base from '../../layouts/Base.astro';
+import SportArt from '../../components/SportArt.astro';
+import ArticleList from '../../components/ArticleList.astro';
+import {sports} from '../../data/sports';
+import {getCollection} from 'astro:content';
+export function getStaticPaths(){return sports.map(s=>({params:{sport:s.id},props:{s}}));}
+const {s}=Astro.props;
+const guides=(await getCollection('guides')).filter(g=>g.data.sport===s.id).sort((a,b)=>a.data.number-b.data.number);
+---
+<Base title={s.name} description={s.description}><section class="intro"><div class="intro-grid"><div><p class="eyebrow">{s.number} / {s.en}</p><h1>{s.name}</h1><p class="lead">{s.tagline} {s.description}</p></div><SportArt sport={s}/></div></section><section class="section"><div class="section-head"><h2>学习指南</h2><span class="note">{guides.length} 篇</span></div><ArticleList guides={guides}/></section><div class="source-line"><div><h3>官方资料</h3><p class="note">查阅规则或活动指南时，以原始来源为准。</p></div><a class="text-link" href={s.url} rel="noopener noreferrer">{s.source} ↗</a></div></Base>

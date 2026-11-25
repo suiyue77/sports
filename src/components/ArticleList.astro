@@ -1,0 +1,5 @@
+---
+import type {CollectionEntry} from 'astro:content';
+const {guides}:{guides:CollectionEntry<'guides'>[]}=Astro.props;
+---
+<div class="article-list">{guides.map(g=><a class="article-row" href={`/${g.data.sport}/${g.id}/`}><span class="eyebrow">{g.data.tag} · {g.data.minutes} 分钟</span><h3>{g.data.title}</h3><p>{g.data.description}</p><span class="text-link">阅读 →</span></a>)}</div>

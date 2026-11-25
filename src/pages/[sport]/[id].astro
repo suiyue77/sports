@@ -1,0 +1,10 @@
+---
+import Base from '../../layouts/Base.astro';
+import {sports} from '../../data/sports';
+import {getCollection,render} from 'astro:content';
+export async function getStaticPaths(){return (await getCollection('guides')).map(g=>({params:{sport:g.data.sport,id:g.id},props:{g}}));}
+const {g}=Astro.props;
+const s=sports.find(s=>s.id===g.data.sport)!;
+const {Content}=await render(g);
+---
+<Base title={g.data.title} description={g.data.description}><article class="article"><a class="text-link" href={`/${s.id}/`}>← 返回{s.name}</a><p class="eyebrow mt-6">{s.en} / {g.data.tag} · {g.data.minutes} 分钟</p><h1>{g.data.title}</h1><p class="lead">{g.data.description}</p><div class="prose"><Content/></div></article></Base>

@@ -4,3 +4,6 @@ A Chinese-language independent sports field guide.
 - [Fitness](/fitness/): [weekly activity](/fitness/fitness-week/), [training notes](/fitness/fitness-training-notes/).
 - [Baseball](/baseball/): [innings](/baseball/baseball-innings/), [positions](/baseball/baseball-positions/).
 Source links are in each article. No live scores or personal exercise records are published.
+
+- [Agent reader](https://sports-two-xi.vercel.app/agent/) — site structure, source links and limits.
+- [Structured catalog](https://sports-two-xi.vercel.app/agent/site.json) — same public reader data in JSON.

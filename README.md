@@ -22,3 +22,9 @@ Astro 5, TypeScript, Tailwind 4, Markdown content collections. Static output. Th
 - User-facing goal: a calm, concise sports reference, not a live score service or personal health application.
 - Build and rendered checks locally; deployment-only hosting (no separate hosted CI gate).
 - Public site context: `/llms.txt`. No private records.
+
+## Project governance
+
+[AGENTS](AGENTS.md) · [Wish](docs/wish/README.md) · [Dev](docs/dev/README.md) · [Design](docs/design/README.md) · [Website Passport](docs/dev/WEBSITE_PASSPORT.md).
+
+Build the source and run \`npm run check:reader\` to check the public reader outputs.

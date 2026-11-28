@@ -5,4 +5,6 @@
 - `/` → sport directory; `/volleyball/`, `/fitness/`, `/baseball/` → collections; per-sport guide routes are generated from content.
 - Official source metadata: [sports data](../../src/data/sports.ts). No live scores or personal records.
 
+- 棒球栏目新增装备页 `/baseball/baseball-glove/` 与维护页 `/baseball/maintenance/`，复用 guide collection、现有文章布局和 Reader 索引；维护案例保留记录时间、观察、报价与待验证问题。
+
 Visual rules and their executable owner are in [Design](../design/README.md); implementation and release rules are in [Dev](../dev/README.md).

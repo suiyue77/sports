@@ -3,6 +3,7 @@
 - Current product intent: [Wish](docs/wish/LATEST.md); information architecture: [Wish Design](docs/wish/DESIGN.md).
 - Visual authority: [Design](docs/design/README.md) and `src/styles/global.css`.
 - Engineering/CI: [Dev](docs/dev/README.md), [Website Passport](docs/dev/WEBSITE_PASSPORT.md), `package.json` and the real deployment configuration.
+- 小红书资料研究、笔记保存和来源验收：先读 [XIAOHONGSHU SOP](docs/dev/XIAOHONGSHU_SOP.md)，只在明确授权范围内读取和发布。
 - Content/source facts: `src/content.config.ts`, `src/data/sports.ts` and guides.
 - Public reader: `/agent/`, `/agent/site.json`, `/llms.txt` relative to the site's base.
 

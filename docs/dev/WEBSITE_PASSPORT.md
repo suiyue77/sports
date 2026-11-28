@@ -1,6 +1,8 @@
 # Website Passport · Sports
 
-Profile: full. Canonical serving URL: https://sports-two-xi.vercel.app/
+Profile: full. Canonical serving URL: https://my-sports-lab.vercel.app/
+
+Compatibility URL: https://sports-two-xi.vercel.app/ remains attached to the same Production environment; new links should use the canonical URL.
 
 | Area | Owner / check |
 |---|---|

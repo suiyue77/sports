@@ -4,7 +4,7 @@ const root='dist/';
 const j=JSON.parse(fs.readFileSync(root+'agent/site.json','utf8'));
 const html=fs.readFileSync(root+'agent/index.html','utf8');
 const llms=fs.readFileSync(root+'llms.txt','utf8');
-assert.equal(j.home,"https://sports-two-xi.vercel.app/");
+assert.equal(j.home,"https://my-sports-lab.vercel.app/");
 assert.equal(j.title,"Sports");
 assert.ok(j.sections.length>=3 && j.limitations.length>0);
 assert.ok(html.includes('Agent Reader') && html.includes(j.title) && html.includes(j.source));
